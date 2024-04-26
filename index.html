@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESO Research Timer</title>
+    <link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>ESO Research Timer</h1>
+    <form id="timerForm">
+			<input type="text" id="researchItem" placeholder="Research Item">
+			<input type="number" id="durationHours" placeholder="Hours" min="0">
+			<input type="number" id="durationMinutes" placeholder="Minutes" min="0" max="59">
+			<button type="submit">Add Timer</button>
+	</form>
+	<ul id="timersList"></ul>
+	
+
+    <script src="script.js"></script>
+</body>
+</html>

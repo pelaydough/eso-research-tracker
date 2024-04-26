@@ -1,0 +1,106 @@
+/* General body styles */
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f5f5f5;
+	margin: 0;
+	padding: 20px;
+}
+
+h1 {
+	color: #1a73e8;
+	font-size: 24px;
+	text-align: center;
+}
+
+/* Form styling */
+#timerForm {
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+/* Delete button styling */
+.delete-btn {
+	background-color: #ff4b4b; /* Red color for delete button */
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 8px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.15s;
+}
+
+.delete-btn:hover {
+	background-color: #e60000; /* Darker red on hover */
+}
+
+
+#timerForm input, #timerForm button {
+	padding: 10px;
+	border: 2px solid #ddd;
+	border-radius: 4px;
+	font-size: 16px;
+	outline: none;
+	flex: 1 1 150px;
+}
+
+#timerForm button {
+	background-color: #1a73e8;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+#timerForm button:hover {
+	background-color: #0c5fd8;
+}
+
+/* Timer list styling */
+#timersList {
+	list-style-type: none;
+	padding: 0;
+}
+
+#timersList li {
+	background: white;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	font-size: 16px;
+}
+
+#timersList li.completed {
+	color: #34a853; /* Google's green color */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+	#timerForm {
+			flex-direction: column;
+			align-items: stretch;
+	}
+
+	#timerForm input, #timerForm button {
+			flex: 1 1 auto; /* Make inputs and buttons stretch to fill their containers */
+	}
+
+	body {
+			padding: 10px; /* Reduce padding on smaller screens */
+	}
+
+	h1 {
+			font-size: 20px; /* Adjust header size on smaller screens */
+	}
+}
